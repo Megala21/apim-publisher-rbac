@@ -1,8 +1,8 @@
-# **APIM Publisher Role Based Access Control Extension**
+# APIM Publisher Role Based Access Control Extension
 
 A role-based API access control extension for API Manager Publisher 2.1.0.
 
-## **Introduction**
+## Introduction
 
 In API Manager Publisher, by default API Creators can edit any API available in the system. This extension is to restrict that and enable role based API modification control. After enabling this extension, only the users with particular roles specified per API can only edit the particular API. However, there won’t be any restrictions with viewing the API.
 
@@ -10,9 +10,9 @@ Once the extension is enabled, there will be a new UI element in Publisher to sp
 
 ## ![](https://github.com/malinthaprasan/apim-publisher-rbac/raw/master/docs/new-ui-element.jpg)
 
-## **Configuration:**
+## Configuration:
 
-### **Configuring the registry indexer: **
+### Configuring the registry indexer: 
 
 * Build the [project](https://github.com/malinthaprasan/apim-publisher-rbac/tree/master/role-based-api-editor-indexer) using "mvn clean install" and get the org.wso2.apim.example.registry.indexer.rolebasedaccess-1.0.0.jar file from the target folder \(or you can use the jar file attached\)
 
@@ -31,7 +31,7 @@ The registry indexer will be invoked when we created or edited any API. It will 
 * Set "subtheme" element as "custom" in &lt;APIM-HOME&gt;/repository/deployment/server/jaggeryapps/publisher/site/conf/site.json
 
 `"theme": {
-    "base":"wso2",
+    "base":"wso2",  
     "subtheme":"custom"  
  }`
 
